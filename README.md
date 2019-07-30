@@ -4,6 +4,11 @@ This repository contains the set up for running text processing jobs on
 Hopper using SLURM to reserve nodes and GNU parallel to assign file names to
 the nodes and enable resuming interrupted jobs.
 
+This set up is best for when jobs are longer and need to be distributed
+across multiple nodes. If it's possible to run all jobs on a single node
+using `parallel`, this may be faster as it won't involve the overhead of
+establishing `ssh` connections.
+
 
 ## Use
 
